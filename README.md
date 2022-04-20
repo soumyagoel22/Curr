@@ -1,2 +1,2 @@
-# Curr
+# Stopwatch
 Created with CodeSandbox
