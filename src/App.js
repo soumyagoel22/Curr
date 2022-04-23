@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
+import Post from "./Post";
 
 const App = () => {
   return (
     <div className="App">
-      <h1>Hello</h1>
       {/* Header */}
       <div className="app_header">
         <img
@@ -13,6 +13,8 @@ const App = () => {
           alt=""
         />
       </div>
+      <h1>Hello</h1>
+      <Post />
       {/* Post */}
     </div>
   );
