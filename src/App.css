@@ -3,6 +3,10 @@
 }
 
 .App {
-  font-family: sans-serif;
-  text-align: center;
+  background-color: #fafafa;
+}
+
+.app_header_image {
+  background-color: white;
+  object-fit: contain;
 }
