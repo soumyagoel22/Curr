@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Post from "./Post";
 
 const App = () => {
+  const [post, setPost] = useState([
+    {
+      username: "kazi",
+      caption: "wow! it works",
+      imageUrl:
+        "https://simg.nicepng.com/png/small/31-315310_react-hexagon-react-js-transparent-background.png"
+    },
+    {
+      username: "kazi",
+      caption: "wow! it works",
+      imageUrl:
+        "https://simg.nicepng.com/png/small/31-315310_react-hexagon-react-js-transparent-background.png"
+    }
+  ]);
+
   return (
     <div className="App">
       {/* Header */}
@@ -14,7 +29,28 @@ const App = () => {
         />
       </div>
       <h1>Hello</h1>
-      <Post />
+      {post.map((post) => (
+        <Post
+          username={post.username}
+          caption={post.caption}
+          imageUrl={post.imageUrl}
+        />
+      ))}
+      <Post
+        username="kazi"
+        caption="wow! it works"
+        imageUrl="https://simg.nicepng.com/png/small/31-315310_react-hexagon-react-js-transparent-background.png"
+      />
+      <Post
+        username="hey"
+        caption="wow! amazing"
+        imageUrl="https://simg.nicepng.com/png/small/31-315310_react-hexagon-react-js-transparent-background.png"
+      />
+      <Post
+        username="yeah"
+        caption="wow! great"
+        imageUrl="https://simg.nicepng.com/png/small/31-315310_react-hexagon-react-js-transparent-background.png"
+      />
       {/* Post */}
     </div>
   );

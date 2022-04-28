@@ -1,5 +1,6 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
+import Avatar from "@material-ui/core/Avatar";
 
 import App from "./App";
 
